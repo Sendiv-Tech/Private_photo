@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Vault</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-lock-on-idle="true">
+
+<div class="ambient"><div class="grain"></div></div>
+
+<header class="app-header">
+  <a href="dashboard.html" class="brand">
+    <svg class="brand-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs><linearGradient id="gDash" x1="0" y1="0" x2="32" y2="32">
+        <stop offset="0" stop-color="#ff4f9e"/><stop offset="1" stop-color="#8b5cf6"/>
+      </linearGradient></defs>
+      <path class="shackle shackle-l" d="M16 14 C16 14 9 14 9 8 C9 4 13 3 16 6" stroke="url(#gDash)" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+      <path class="shackle shackle-r" d="M16 14 C16 14 23 14 23 8 C23 4 19 3 16 6" stroke="url(#gDash)" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+      <rect x="7" y="13" width="18" height="14" rx="5" fill="url(#gDash)"/>
+      <circle cx="16" cy="19" r="2" fill="#150f22"/><rect x="15" y="19.5" width="2" height="4" rx="1" fill="#150f22"/>
+    </svg>
+    Vault
+  </a>
+  <nav>
+    <a href="dashboard.html" class="active">My Vault</a>
+    <a href="upload.html">Upload</a>
+    <a href="lock.html">Lock</a>
+  </nav>
+  <div style="display:flex;align-items:center;gap:16px;">
+    <div class="search-pill">
+      <span>⌕</span>
+      <input type="text" placeholder="Search memories…">
+    </div>
+    <button class="avatar-btn">A</button>
+  </div>
+</header>
+
+<main class="app-main">
+  <div class="app-main-head">
+    <div>
+      <h1 class="app-title">My <em style="font-style:italic;background:var(--gradient-primary);-webkit-background-clip:text;background-clip:text;color:transparent;">Vault</em></h1>
+      <p class="app-title-sub">248 photos kept safe across 4 albums</p>
+    </div>
+  </div>
+
+  <section style="margin-bottom:50px;">
+    <div class="album-grid">
+
+      <div class="album-card" data-open-viewer="linear-gradient(135deg,#ff4f9e,#8b5cf6)" style="animation-delay:.05s;">
+        <div class="album-card-inner">
+          <div class="thumb-stack">
+            <div style="background:linear-gradient(135deg,#ff6fb0,#8b5cf6);"></div>
+            <div style="background:linear-gradient(135deg,#8b5cf6,#3a2a5c);"></div>
+            <div style="background:linear-gradient(135deg,#ff4f9e,#ffa8d4);"></div>
+            <div style="background:linear-gradient(135deg,#5b3a8c,#ff4f9e);"></div>
+          </div>
+          <div class="album-cover">
+            <span class="album-count">86 photos</span>
+            <span class="album-name">Our Moments</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="album-card" data-open-viewer="linear-gradient(135deg,#8b5cf6,#22c1c3)" style="animation-delay:.1s;">
+        <div class="album-card-inner">
+          <div class="thumb-stack">
+            <div style="background:linear-gradient(135deg,#22c1c3,#8b5cf6);"></div>
+            <div style="background:linear-gradient(135deg,#5b3a8c,#22c1c3);"></div>
+            <div style="background:linear-gradient(135deg,#8b5cf6,#1f2a4d);"></div>
+            <div style="background:linear-gradient(135deg,#3a2a5c,#22c1c3);"></div>
+          </div>
+          <div class="album-cover">
+            <span class="album-count">64 photos</span>
+            <span class="album-name">Travel Diaries</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="album-card" data-open-viewer="linear-gradient(135deg,#ffb86b,#ff4f9e)" style="animation-delay:.15s;">
+        <div class="album-card-inner">
+          <div class="thumb-stack">
+            <div style="background:linear-gradient(135deg,#ffb86b,#ff4f9e);"></div>
+            <div style="background:linear-gradient(135deg,#ff4f9e,#8b5cf6);"></div>
+            <div style="background:linear-gradient(135deg,#ffa8d4,#5b3a8c);"></div>
+            <div style="background:linear-gradient(135deg,#ff8fc2,#ffb86b);"></div>
+          </div>
+          <div class="album-cover">
+            <span class="album-count">52 photos</span>
+            <span class="album-name">Special Days</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="album-card" data-open-viewer="linear-gradient(135deg,#6b8cff,#b794f6)" style="animation-delay:.2s;">
+        <div class="album-card-inner">
+          <div class="thumb-stack">
+            <div style="background:linear-gradient(135deg,#6b8cff,#b794f6);"></div>
+            <div style="background:linear-gradient(135deg,#b794f6,#3a2a5c);"></div>
+            <div style="background:linear-gradient(135deg,#1f2a4d,#6b8cff);"></div>
+            <div style="background:linear-gradient(135deg,#b794f6,#ff8fc2);"></div>
+          </div>
+          <div class="album-cover">
+            <span class="album-count">46 photos</span>
+            <span class="album-name">Random Clicks</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="app-main-head" style="margin-bottom:18px;">
+      <h2 style="font-family:var(--font-display);font-weight:500;font-size:1.4rem;">Recently added</h2>
+    </div>
+    <div class="thumb-grid">
+      <div class="thumb-item" data-open-viewer="linear-gradient(160deg,#ff4f9e,#5b3a8c)" style="background-image:linear-gradient(160deg,#ff4f9e,#5b3a8c);"></div>
+      <div class="thumb-item" data-open-viewer="linear-gradient(160deg,#8b5cf6,#22c1c3)" style="background-image:linear-gradient(160deg,#8b5cf6,#22c1c3);"></div>
+      <div class="thumb-item" data-open-viewer="linear-gradient(160deg,#ffb86b,#ff4f9e)" style="background-image:linear-gradient(160deg,#ffb86b,#ff4f9e);"></div>
+      <div class="thumb-item" data-open-viewer="linear-gradient(160deg,#6b8cff,#b794f6)" style="background-image:linear-gradient(160deg,#6b8cff,#b794f6);"></div>
+      <div class="thumb-item" data-open-viewer="linear-gradient(160deg,#ff8fc2,#3a2a5c)" style="background-image:linear-gradient(160deg,#ff8fc2,#3a2a5c);"></div>
+      <div class="thumb-item" data-open-viewer="linear-gradient(160deg,#b794f6,#ff4f9e)" style="background-image:linear-gradient(160deg,#b794f6,#ff4f9e);"></div>
+    </div>
+  </section>
+</main>
+
+<a href="upload.html" class="fab" aria-label="Upload photos">+</a>
+
+<!-- Image Viewer Modal -->
+<div class="modal-backdrop" id="viewerModal">
+  <button class="modal-close" aria-label="Close">✕</button>
+  <div class="viewer">
+    <div class="viewer-frame"></div>
+    <div class="viewer-bar">
+      <span style="color:var(--c-mist);font-size:0.85rem;font-family:var(--font-mono);">IMG_0214 · 4.2 MB</span>
+      <div class="viewer-actions">
+        <button class="icon-btn" data-action="lock" aria-label="Lock">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="9" rx="2.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+        </button>
+        <button class="icon-btn" data-action="download" aria-label="Download">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12m0 0l-4.5-4.5M12 16l4.5-4.5"/><path d="M4 18v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1"/></svg>
+        </button>
+        <button class="icon-btn" data-action="share" aria-label="Share">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </button>
+        <button class="icon-btn danger" data-action="delete" aria-label="Delete">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2m-9 0 1 13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-13"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
